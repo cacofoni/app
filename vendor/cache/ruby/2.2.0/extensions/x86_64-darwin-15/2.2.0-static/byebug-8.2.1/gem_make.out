@@ -1,0 +1,15 @@
+/Users/eddi/.rbenv/versions/2.2.4/bin/ruby -r ./siteconf20160113-15679-1j9ha3g.rb extconf.rb
+creating Makefile
+
+make "DESTDIR=" clean
+
+make "DESTDIR="
+compiling breakpoint.c
+compiling byebug.c
+compiling context.c
+compiling locker.c
+compiling threads.c
+linking shared-object byebug/byebug.bundle
+
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 byebug.bundle ./.gem.20160113-15679-18b9dui/byebug

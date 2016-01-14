@@ -1,0 +1,9 @@
+/Users/eddi/.rbenv/versions/2.2.4/bin/ruby -r ./siteconf20160113-15679-14c33rt.rb extconf.rb
+creating Makefile
+
+make "DESTDIR=" clean
+
+make "DESTDIR="
+make: Nothing to be done for `all'.
+
+make "DESTDIR=" install
