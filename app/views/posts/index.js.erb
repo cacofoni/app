@@ -1,0 +1,9 @@
+$(document).ready(function(){
+  refreshPost();
+});
+
+function refreshPost(){
+    $('#posts').load('index.html.erb', function(){
+       setTimeout(refreshPost, 5000);
+    });
+}

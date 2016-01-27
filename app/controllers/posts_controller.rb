@@ -6,6 +6,7 @@ class PostsController < ApplicationController
     #respond_with(@posts)
     respond_to do |format|
        format.html
+       format.js
     end
   end
   

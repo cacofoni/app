@@ -1,0 +1,30 @@
+/Users/eddi/.rbenv/versions/2.2.4/bin/ruby -r ./siteconf20160126-9720-10fccdz.rb extconf.rb
+creating Makefile
+Compiling v8 for x64
+Using python 2.7.10
+Configured with: --prefix=/Library/Developer/CommandLineTools/usr --with-gxx-include-dir=/usr/include/c++/4.2.1
+Using compiler: /usr/bin/g++
+Configured with: --prefix=/Library/Developer/CommandLineTools/usr --with-gxx-include-dir=/usr/include/c++/4.2.1
+../src/cached-powers.cc:136:18: error: unused variable 'kCachedPowersLength' [-Werror,-Wunused-const-variable]
+static const int kCachedPowersLength = ARRAY_SIZE(kCachedPowers);
+                 ^
+1 error generated.
+make[1]: *** [/Users/eddi/Documents/RailsApps/cacofoni/vendor/cache/ruby/2.2.0/gems/libv8-3.16.14.3/vendor/v8/out/x64.release/obj.target/preparser_lib/src/cached-powers.o] Error 1
+make: *** [x64.release] Error 2
+/Users/eddi/Documents/RailsApps/cacofoni/vendor/cache/ruby/2.2.0/gems/libv8-3.16.14.3/ext/libv8/location.rb:36:in `block in verify_installation!': libv8 did not install properly, expected binary v8 archive '/Users/eddi/Documents/RailsApps/cacofoni/vendor/cache/ruby/2.2.0/gems/libv8-3.16.14.3/vendor/v8/out/x64.release/obj.target/tools/gyp/libv8_base.a'to exist, but it was not found (Libv8::Location::Vendor::ArchiveNotFound)
+	from /Users/eddi/Documents/RailsApps/cacofoni/vendor/cache/ruby/2.2.0/gems/libv8-3.16.14.3/ext/libv8/location.rb:35:in `each'
+	from /Users/eddi/Documents/RailsApps/cacofoni/vendor/cache/ruby/2.2.0/gems/libv8-3.16.14.3/ext/libv8/location.rb:35:in `verify_installation!'
+	from /Users/eddi/Documents/RailsApps/cacofoni/vendor/cache/ruby/2.2.0/gems/libv8-3.16.14.3/ext/libv8/location.rb:26:in `install!'
+	from extconf.rb:7:in `<main>'
+GYP_GENERATORS=make \
+	build/gyp/gyp --generator-output="out" build/all.gyp \
+	              -Ibuild/standalone.gypi --depth=. \
+	              -Dv8_target_arch=x64 \
+	              -S.x64  -Dv8_enable_backtrace=1 -Dv8_can_use_vfp2_instructions=true -Darm_fpu=vfpv2 -Dv8_can_use_vfp3_instructions=true -Darm_fpu=vfpv3
+  CXX(target) /Users/eddi/Documents/RailsApps/cacofoni/vendor/cache/ruby/2.2.0/gems/libv8-3.16.14.3/vendor/v8/out/x64.release/obj.target/preparser_lib/src/allocation.o
+  CXX(target) /Users/eddi/Documents/RailsApps/cacofoni/vendor/cache/ruby/2.2.0/gems/libv8-3.16.14.3/vendor/v8/out/x64.release/obj.target/preparser_lib/src/atomicops_internals_x86_gcc.o
+  CXX(target) /Users/eddi/Documents/RailsApps/cacofoni/vendor/cache/ruby/2.2.0/gems/libv8-3.16.14.3/vendor/v8/out/x64.release/obj.target/preparser_lib/src/bignum.o
+  CXX(target) /Users/eddi/Documents/RailsApps/cacofoni/vendor/cache/ruby/2.2.0/gems/libv8-3.16.14.3/vendor/v8/out/x64.release/obj.target/preparser_lib/src/bignum-dtoa.o
+  CXX(target) /Users/eddi/Documents/RailsApps/cacofoni/vendor/cache/ruby/2.2.0/gems/libv8-3.16.14.3/vendor/v8/out/x64.release/obj.target/preparser_lib/src/cached-powers.o
+
+extconf failed, exit code 1
