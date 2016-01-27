@@ -5,7 +5,8 @@ $(document).ready(function(){
 });
 
 function refreshPost(){
-    $('#posts').load('index.html.erb', function(){
+    $('#posts').load('posts/index.html.erb', function(){
        setTimeout(refreshPost, 5000);
+	   alert('happens again');
     });
 }
